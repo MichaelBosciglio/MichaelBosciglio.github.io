@@ -2,15 +2,80 @@
 <html>
 
     <head>
-        <title>Survey</title>
+        <title>Trello UI Survey</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        Hi
+        <h1>Trello UI Survey</h1>
+        <br>
+        <br>
+        <h2>The purpose of this survey is to evaluate the overall user interface of the website <a href="https://trello.com/">Trello.</a></h2>
+        <br>
+        <div class="center"><a href="https://trello.com/"><img src="TrelloImage.png" alt="https://trello.com/" ></a></div>
+        <br>
+        <br>
+        <h2>Please answer the following questions honestly. </h2>
+        
+        <form id="TrelloSurvey" action=none>
+                
+                <br>
+                <h3>
+                    Who are you?
+                </h3>
+                <p>
+                    First Name:
+                    <input type="text" name="firstname">
+                </p>
+                <p>
+                    Last Name: 
+                    <input type="text" name="lastname">    
+                </p>
+                <br>
+                <h3>
+                    Consistency of the Webpage
+                </h3>
+                <p>
+                    Website follows a consistent theme 
+                    <input type="radio" name="consistent">
+                </p>
+                <p>
+                    Website does not follow a consistent theme
+                    <input type="radio" name="inconsistent">
+                </p>
+                <br>
+                <h3>
+                    Favourite Aspect of the Website's Design
+                </h3>
+                <select id="Fav">
+                    <option value="Colour" selected="selected">Choice of Colours</option>
+                    <option value="Consistency">Overall Consistency</option>
+                    <option value="Simplicity">Website's Simplicity</option>
+                    <option value="Functionality">Functionality</option>
+                </select>
+                <br>
+                <br>
+                <h3>
+                    What Would you like to see Improve?
+                </h3>
+                <select id="improve" multiple>
+                    <option value="Colours">Simplicity of Website</option>
+                    <option value="Consistencies">Consistency</option>
+                    <option value="Simplicities">Simplicity</option>
+                    <option value="Functionalities">Functionality</option>
+                </select>
+                <br>
+                <br>
+                <h3>
+                    Final Comments
+                </h3>
+                <textarea id="comments" rows="3" cols="50"></textarea>
+                <br>
+                <br>
+                <button id="submit" type="button" class="block">Submit</button>
+        </form>
     </body>
-
-    <footer>Michael Bosciglio</footer>
+    <footer>mbosc084</footer>
 </html>
 
 
