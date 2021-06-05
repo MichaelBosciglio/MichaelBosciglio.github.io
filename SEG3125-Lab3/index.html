@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head><link href="styles/styles.css" rel="stylesheet" type="text/css"></head>
+
+  <h1>Michael's Market</h1>
+
+  <body onload = "openInfo(event,'Client')"></body>
+
+    <div id="Client" class="tabcontent">
+      <h3>Organic Preference</h3>
+      <p>Would you like to see organic products?</p>
+      <select id="organicSelect" name="organicSelect">
+        <option value="true" organic = "true" >Yes</option>
+        <option value="false" organic = "false">No</option>
+      </select>
+      <br>
+      <br>
+      <p>Choose Your Restrictions</p>
+      <input class="checkboxbutton" name="test" type="radio" id="Lactose Intolerant" value="Lactose Intolerant" onchange="populateListProductChoices(this.id,'displayProduct','organicSelect')">
+      Lactose Free
+      <br>
+      <input class="checkboxbutton" name="test" type="radio" id="Nut Allergy" value="Nut Allergy" onchange="populateListProductChoices(this.id,'displayProduct','organicSelect')">
+      Nut Free
+      <br>
+      <input class="checkboxbutton" name="test" type="radio" id="None" value="None" onchange="populateListProductChoices(this.id,'displayProduct','organicSelect')">
+      No Allergies
+      <br>
+      <br>
+      <button class = "nextButton" onclick="openInfo(event,'Products')">Next</button>
+      <br>
+      <br>
+    </div>
+
+    <!-- Tab content -->
+
+    <div id="Products" class="tabcontent">
+      <h3>Add To Cart</h3>
+      <p>(Items are Based Upon Restrictions)</p>
+      <br>
+      <div id="displayProduct"></div>
+      <br>
+      <button class = "backButton" onclick="openInfo(event,'Client')">Back</button>
+      <button class = "nextButton" onclick="selectedItems(); openInfo(event,'Cart')">Next</button>
+      <br>
+      <br>
+    </div>
+
+    <div id="Cart" class="tabcontent">
+      <h3>Your Cart</h3>
+      <div id="displayCart"></div>
+      <br>
+      <button class = "backButton" onclick="openInfo(event,'Products')">Back</button>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+    <footer>Website Designed by Michael Bosciglio</footer>
+
+    <script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
+</html>
