@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+</head>
+<body>
+
+<nav class="navbar bg-dark text-white p-4">
+    <h1> 🚑 Michael's Physio Clinic</h1>
+</nav>
+
+<div class = "container-lg">
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1 class=""> Who are we?</h1>
+        <p class="p-4 my-3" style="font-size: 25px">We are a Physiotherapy clinic located in Vaughan, Ontario.</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">With our world class doctors, we can help your physio needs.</p>
+    </div>
+    
+    <div class=" p-3 my-3 border">
+        <h1 class="">The Services</h1><br>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="h4">Sports Physiotherapy</td>
+                    <td class="h5">$90 ($50 Assessment, $40 Exercise)</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h4">Full Body Massage</td>
+                    <td class="h5">$120</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h4">Injury Assessment Session</td>
+                    <td class="h5">$50</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h4">Preventative Care</td>
+                    <td class="h5">$30</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="h4">Workout Reginment Planning</td>
+                    <td class="h5">$150</td>
+                    <td>
+                        <button type="button" class="btn btn-info m-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Book</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">First Name</label>
+                        <input type="email" class="form-control" id="firstName" placeholder="Johnny">
+                    </div>
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">Last Name</label>
+                        <input type="email" class="form-control" id="lastName" placeholder="Appleseed">
+                    </div>
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@address.com">
+                    </div>
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+                    </div>
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="mb-1">
+                        <label for="input1" class="form-label">Time</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                    Prefered Doctor
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Kwame Brown
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Rasho Nesterovic
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Darko Milicic
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            No Preference
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" p-3 my-3 border">
+        <h1>Our Doctors</h1><br>
+        <div class="row justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="images/Kwame.jpg" height="200" class="card-img-top" alt="Kwame Brown">
+                <div class="card-body">
+                    <h4 class="title" style="margin-bottom: 0;" >Kwame Brown</h5>
+                    <p class="text-muted">Lead Physician</p>
+                    <p class="card-text">Previous Lead Physician for the <i>Los Angeles Lakers</i>.<br>
+                    Voted the undisputed <strong>#1 G.O.A.T Physician</strong> in the world.
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/Rasho.jpg" height="200" class="card-img-top" alt="Rasho Nesterovic">
+                <div class="card-body">
+                    <h4 class="title" style="margin-bottom: 0;" >Rasho Nesterovic</h5>
+                    <p class="text-muted">Physician</p>
+                    <p class="card-text">Previous Physician Intern for the <i>Toronto Raptors</i>.<br>
+                    Voted the undisputed <strong>Community Favourite Physician</strong> in town.
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/Darko.jpg" height="200" class="card-img-top" alt="Darko Milicic">
+                <div class="card-body">
+                    <h4 class="title" style="margin-bottom: 0;" >Darko Milicic</h5>
+                    <p class="text-muted">Intern Physician</p>
+                    <p class="card-text">Previous Intern for the <i>Minnesota Timberwolves.</i><br>
+                        Voted the undisputed <strong>Family First Physician</strong> in town.
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class=" p-3 my-3 border bg-light">
+        <h1>More Information</h1>
+        <table class="table align-middle">
+            <thead>
+            <tr>
+                <th scope="col" class="w-25" style="font-size: 20px; text-align: center;">Clinic</th>
+                <th scope="col" class="w-25" style="font-size: 20px; padding-left: 25px;">Hours</th>
+                <th scope="col" class="w-25" style="font-size: 20px;">Contact Information</th>
+                <th scope="col" class="w-25" style="font-size: 20px;">Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table align-middle">
+                <td style="text-align: center;">
+                    Monday<br>
+                    Tuesday<br>
+                    Wednesday<br>
+                    Thursday<br>
+                    Friday<br>
+                    Weekends<br>
+                </td>
+                <td style="text-align: left;">9:00 to 17:00 <br>
+                    9:00 to 17:00 <br>
+                    9:00 to 17:00 <br>
+                    9:00 to 17:00 <br>
+                    9:00 to 16:00 <br>
+                    9:00 to 14:00 <br>
+                </td>
+                <td>
+                    Phone: 123-003-2312
+                    Email: physio@gmail.com
+                    Fax:  123-221-1231
+                </td>
+                <td>
+                    1 Bass Pro Mills Dr
+                    Vaughan, ON L4K 5W4
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
