@@ -1,5 +1,7 @@
 import {useState} from 'react';
 import Calendar from 'react-calendar'
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Home = () => {
     const [value, onChange] = useState(new Date());
@@ -13,7 +15,7 @@ const Home = () => {
           </p>
           <h5>Tournament Information</h5>
           <p>
-              Our tournaments will allow players to compete every Weekend.
+              Our tournaments will allow players to compete every weekend.
           </p>
           <Calendar
             onChange={onChange}

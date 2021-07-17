@@ -17,7 +17,8 @@ const InformativeVideos = () => {
 
     return (
         <div className="react-player">
-          <h4 >Setting</h4>
+          <h4>Informative Videos</h4>
+          <h6 >Setting</h6>
           <ReactPlayer
            url='https://www.youtube.com/watch?v=h5mpBCRK_yk'
            className='react-player'
@@ -26,7 +27,7 @@ const InformativeVideos = () => {
               This video will go through the fundamentals of 'Setting' in volleyball! 
            </p>
            <br />
-           <h3>Spiking</h3>
+           <h6>Spiking</h6>
           <ReactPlayer
            url='https://www.youtube.com/watch?v=7qRzBXGvezQ'
            className='react-player'
@@ -35,7 +36,7 @@ const InformativeVideos = () => {
               This video will go through the fundamentals of 'Spiking' in volleyball! 
            </p>
            <br />
-           <h3>Passing</h3>
+           <h6>Passing</h6>
           <ReactPlayer
            url='https://www.youtube.com/watch?v=gOgfoEGUDCA'
            className='react-player'
@@ -43,6 +44,7 @@ const InformativeVideos = () => {
            <p className="create">
            This video will go through the fundamentals of 'Passing' in volleyball! 
            </p>
+           <br />
         </div>
       );
 }
